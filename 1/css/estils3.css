@@ -1,0 +1,107 @@
+#div1{
+    width: 95%;
+    max-width: 1200px;
+    border: 0.8rem solid black;
+}
+#sub1{
+    background: #37474f;
+    border: 0.2rem solid black;
+    display: flex;
+    flex-direction: row;
+}
+#sub2{
+    border: 0.2rem solid black;
+    background: orange;
+}
+p{
+    font-size: 1.1rem;
+    padding: 4px;
+}
+#div2{
+    width: 95%;
+    max-width: 1200px;
+    margin-top: 1rem;
+    border: 0.8rem solid black;
+    display: flex;
+    flex-direction: row;
+}
+#divsub1{
+    width: 70%;
+    border: 0.2rem solid black;
+    background: green;
+}
+#divsub2{
+    width:29%;
+    border: 0.2rem solid black;
+    background: yellow;
+}
+#tercersub{
+    display: flex;
+    flex-direction: row;
+}
+#div3{
+    width: 95%;
+    max-width: 1200px;
+    height: 1rem;
+    margin-top: 1rem;
+    border: 00.8rem solid black;
+    background: gold;
+}
+@media(max-width: 1200px){
+    #div1{
+        max-width: 1200px;
+    }
+    #div2{
+        max-width:1200px;
+        display: flex;
+        flex-direction: column;
+        border: 0.8rem solid yellow;
+    }
+    #div3{
+        max-width: 1200px;
+    }
+    #divsub1{
+        width: 100%;
+        border: 0.2rem solid yellow;
+        background: green;
+    }
+    #divsub2{
+        width:100%;
+        border: 0.2rem solid yellow;
+        background: indianred;
+    }
+    #div2>p{
+        font-size: 3vw;
+    }
+    .text{
+        font-size: 3.6vw;
+        margin: 6px;
+        color: gold;
+        padding-left: 60px;
+    }
+    .text1{
+        font-size: 2vw;
+    }
+    @media(max-width: 800px){
+        #sub1{
+            background: #37474f;
+            border: 0.2rem solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            text-align: left;
+            font-size: 3.6vw;
+            padding: 6px;
+            margin: 0px
+        }
+        #tercersub{
+            display: flex;
+            flex-direction: column;
+        }
+        .text1{
+            font-size: 3.6vw;
+            padding: 10px
+        }
+    }
+}
