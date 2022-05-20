@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    position: relative;
+    height: 37vw;
+    overflow: hidden;
+}
+header>img{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -4;
+    overflow: hidden;
+}
+header>nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+}
+#logo{
+    width:12%;
+    text-align: center;
+}
+#div1>div{
+    padding-top: 4vh;
+    font-family: times;
+    cursor: pointer;
+}
+#div1>div:hover{
+    color: orange;
+}
+#logo>img{
+    width: 50%;
+}
+#div1{
+    display: flex;
+    flex-direction: row;
+    width: 74%;
+}
+#div1>div{
+    width: 20%;
+    text-align: center;
+}
+#div1>div>img{
+    width: 10%;
+}
+#nets{
+    width:14%;
+    display: flex;
+    flex-direction: row;
+}
+#nets>img{
+    padding-top: 1vh;
+    padding-left: 36px;
+    width:10%;
+    cursor: pointer;
+}
+#eslogan{
+    position: absolute;
+    top: 26vw;
+    width: 100%;
+}
+#eslogan>p{
+    color: rgba(255,134,66,1);
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: times;
+}
+#capa{
+    position: absolute;
+    top: 26vw;
+    width: 84%;
+    margin-left: 8%;
+    background: silver;
+    height: 120px;
+    opacity: 0.4;
+    z-index: -2;
+}
+#amagat{
+    position: absolute;
+    top:80px;
+    left:-800px;
+    width:60%;
+    height: 310px;
+    background: ivory;
+    opacity:0.9;
+    transition: all 2s;
+}
+#amagat>div{
+    padding-top: 3vh;
+    padding-left: 3vh;
+    font-family: times;
+    cursor: pointer;
+}
+#amagat>div:hover{
+    color:orange;
+}
+#amagat>div>img{
+    width:20px;
+    z-index: -1;
+}
+#hamb{
+    position: absolute;
+    top:-200px;
+    left: 80%;
+    width:10%;
+}
+#hamb>img{
+    position: absolute;
+    width:30px;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+    #eslogan>p{
+        font-size: 1.1rem;
+    }
+    #div1,#nets{
+        z-index: -8;
+    }
+    #hamb{
+        position: absolute;
+        top: 20px;
+        left: 90%;
+        width:20px;
+    } 
+}

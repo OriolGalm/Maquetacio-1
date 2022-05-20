@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/webturisme.css" type="text/css" rel="stylesheet"></link>
+</head>
+<body>
+    
+    <header>
+        <img src="img/header2.jpg">
+        <nav>
+            <div id="logo"> 
+                <img src="img/favicon.ico">
+            </div>
+            <div id="div1">
+                <div><img src="img/house-chimney-solid.svg">&nbsp;Inicio</div>
+                <div><img src="img/map-location-dot-solid.svg">&nbsp;Rutas</div>
+                <div><img src="img/square-h-solid.svg">&nbsp;Hoteles</div>
+                <div><img src="img/plane-solid.svg">&nbsp;Vuelos</div>
+                <div><img src="img/envelope-open-text-solid.svg">&nbsp;Contacto</div>
+            </div>
+            <div id="nets">    
+                    <img src="img/facebook-square-brands.svg">
+                    <img src="img/twitter-brands.svg">
+            </div>
+        </nav>
+
+        <div id="eslogan">
+            <p>"Disfruta de la experiencia de otros viajeros"</p>
+        </div>
+        <div id="capa"></div>
+
+        <div id="hamb" onclick="menu()">
+            <img src="img/bars-solid.svg">
+        </div>
+        
+    </header>
+
+    <div id="amagat">
+        <div><img src="img/house-chimney-solid.svg">&nbsp;Inicio</div>
+        <div><img src="img/map-location-dot-solid.svg">&nbsp;Rutas</div>
+        <div><img src="img/square-h-solid.svg">&nbsp;Hoteles</div>
+        <div><img src="img/plane-solid.svg">&nbsp;Vuelos</div>
+        <div><img src="img/envelope-open-text-solid.svg">&nbsp;Contacto</div>
+        <div><img src="img/facebook-square-brands.svg"></div>
+        <div><img src="img/twitter-brands.svg"></div>
+    </div>
+
+    <script> 
+        function menu(){
+            let canv = document.getElementById("amagat");
+            if(canv.style.left === "-800px"){
+                canv.style.left = "0px";
+            }else{
+                canv.style.left = "-800px";
+            }
+        }
+    </script>
+</body>
+</html>
