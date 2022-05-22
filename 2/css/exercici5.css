@@ -1,0 +1,241 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    width: 100%;
+    position: relative;
+    height: 36vw;
+    overflow: hidden;
+}
+header>img{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -4;
+    overflow: hidden;
+}
+header>nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+}
+#logo{
+    width:12%;
+    text-align: center;
+}
+#div1>div{
+    padding-top: 4vh;
+    font-family: times;
+    cursor: pointer;
+}
+#div1>div:hover{
+    color: orange;
+}
+#logo>img{
+    width: 50%;
+}
+#div1{
+    display: flex;
+    flex-direction: row;
+    width: 74%;
+}
+#div1>div{
+    width: 20%;
+    text-align: center;
+}
+#div1>div>img{
+    width: 10%;
+}
+#nets{
+    width:14%;
+    display: flex;
+    flex-direction: row;
+}
+#nets>img{
+    padding-top: 1vh;
+    padding-left: 36px;
+    width:10%;
+    cursor: pointer;
+}
+#eslogan{
+    position: absolute;
+    top: 26vw;
+    width: 100%;
+}
+#eslogan>p{
+    color: rgba(255,134,66,1);
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: times;
+}
+#capa{
+    position: absolute;
+    top: 26vw;
+    width: 84%;
+    margin-left: 8%;
+    background: silver;
+    height: 120px;
+    opacity: 0.4;
+    z-index: -2;
+}
+#amagat{
+    position: absolute;
+    top:80px;
+    left:-800px;
+    width:60%;
+    height: 310px;
+    background: ivory;
+    opacity:0.9;
+    z-index: 1;
+    transition: all 2s;
+}
+#amagat>div{
+    padding-top: 3vh;
+    padding-left: 3vh;
+    font-family: times;
+    cursor: pointer;
+}
+#amagat>div:hover{
+    color:orange;
+}
+#amagat>div>img{
+    width:20px;
+    z-index: -1;
+}
+#hamb{
+    position: absolute;
+    top:-200px;
+    left: 80%;
+    width:10%;
+}
+#hamb>img{
+    position: absolute;
+    width:30px;
+    cursor: pointer;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    margin-top: 2vh;
+}
+section>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:77%;
+    margin-right: 1%;
+    background: lightgray;
+}
+section>div>article{
+    width:48%;
+    margin: 1%;
+    background: whitesmoke;
+}
+.div1{
+    position: relative;
+}
+section>div>article>div>img{
+    width: 96%;
+    margin: 2% 2% 0% 2%;
+}
+.dia{
+    position: absolute;
+    bottom:-10px;
+    left:10px;
+    color: gold;
+    font-family: calibri;
+}
+article>h3{
+    width: 95%;
+    margin: -1px 2%;
+    background: rgba(240,138,138,1);
+    text-transform: uppercase;
+    font-family: calibri;
+    color: white;
+    padding-top: 5px;
+    padding-left: 1%; 
+}
+article>p{
+    font-size: .9rem;
+    column-count: 2;
+    padding:10px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    color: dimgrey;
+}
+section>div>p{
+    text-align: center;
+    font-family: times;
+    margin: 8px 0px;
+}
+aside{
+    width:22%;
+    background: lightgray;
+}
+aside>h4{
+    text-align: center;
+}
+aside>p{
+    text-align: center;
+    justify-content: center;
+    padding: 0px 16px;
+}
+footer{
+    width: 100%;
+    height: 35px;
+    background: lightgray;
+    margin-top: 2vh;
+}
+footer>p{
+    width: 98%;
+    height: 26px;
+    text-align: center;
+    padding-top: 9px;
+    margin: 0px 1%;
+    background: whitesmoke;
+    color: dimgray;
+}
+
+@media(max-width: 800px){
+    #eslogan>p{
+        font-size: 1.1rem;
+    }
+    #div1,#nets{
+        z-index: -8;
+    }
+    #hamb{
+        position: absolute;
+        top: 20px;
+        left: 90%;
+        width:20px;
+    } 
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    section>div{
+        width:100%;
+    }
+    section>div>article{
+        width:98%;
+        margin: 1%;
+        background: whitesmoke;
+    }
+    .dia{
+        position: absolute;
+        bottom:-10px;
+        left:2.5%;
+    }
+    article>p{
+        column-count: 1;
+        padding: 10px 16px;
+    }
+    aside{
+        width:100%;
+    }
+}
