@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/exercici6.css" type="text/css" rel="stylesheet"></link>
+</head>
+<body>
+    
+    <header>
+        <img src="img/header2.jpg">
+        <nav>
+            <div id="logo"> 
+                <img src="img/favicon.ico">
+            </div>
+            <div id="div1">
+                <div><img src="img/house-chimney-solid.svg">&nbsp;Inicio</div>
+                <div><img src="img/map-location-dot-solid.svg">&nbsp;Rutas</div>
+                <div><img src="img/square-h-solid.svg">&nbsp;Hoteles</div>
+                <div><img src="img/plane-solid.svg">&nbsp;Vuelos</div>
+                <div><img src="img/envelope-open-text-solid.svg">&nbsp;Contacto</div>
+            </div>
+            <div id="nets">    
+                    <img src="img/facebook-square-brands.svg">
+                    <img src="img/twitter-brands.svg">
+            </div>
+        </nav>
+
+        <div id="eslogan">
+            <p>"Disfruta de la experiencia de otros viajeros"</p>
+        </div>
+        <div id="capa"></div>
+
+        <div id="hamb" onclick="menu()">
+            <img src="img/bars-solid.svg">
+        </div>
+        
+    </header>
+
+    <div id="amagat">
+        <div><img src="img/house-chimney-solid.svg">&nbsp;Inicio</div>
+        <div><img src="img/map-location-dot-solid.svg">&nbsp;Rutas</div>
+        <div><img src="img/square-h-solid.svg">&nbsp;Hoteles</div>
+        <div><img src="img/plane-solid.svg">&nbsp;Vuelos</div>
+        <div><img src="img/envelope-open-text-solid.svg">&nbsp;Contacto</div>
+        <div><img src="img/facebook-square-brands.svg"></div>
+        <div><img src="img/twitter-brands.svg"></div>
+    </div>
+
+    <section>
+        <div>
+            <article>
+                <div class="div1">
+                    <img src="img/sakura.jpg">
+                    <p class="dia">3 mayo 2021</p>
+                </div>
+                <h3>cultura</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.</p>
+                <p>Leer más...</p>
+            </article>
+            <article>
+                <div class="div1">
+                    <img src="img/comida.jpg">
+                    <p class="dia">1 mayo 2021</p>
+                </div>
+                <h3>gastronomía</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.</p>
+                <p>Leer más...</p>    
+            </article>
+            <article>
+                <div class="div1">
+                    <img src="img/fuji.jpg">
+                    <p class="dia">22 abril 2021</p>
+                </div>
+                <h3>turismo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.</p>
+                <p>Leer más...</p>
+            </article>
+            <article>
+                <div class="div1">
+                    <img src="img/noche.jpg">
+                    <p class="dia">30 marzo 2021</p>
+                </div>
+                <h3>vida nocturna</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.</p>
+                <p>Leer más...</p>
+            </article>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+                deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non 
+                provident</p>
+        </div>
+        <aside>
+            <h4>Something</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </aside>
+    </section>
+
+    <footer>
+        <p>©2021 Japan Tourism</p>
+    </footer>
+
+    <script> 
+        function menu(){
+            let canv = document.getElementById("amagat");
+            if(canv.style.left === "0px"){
+                canv.style.left = "-800px";
+            }else{
+                canv.style.left = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
